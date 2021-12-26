@@ -13,10 +13,21 @@
     <title>Bay Area Hackers</title>
   </head>
   <body>
-    <header>
+    <header class="header sticky text-white">
       <!-- ここにロゴ、メニューの名前を入れる -->
       <!-- タブレット、スマホではハンバーガーメニューアイコン(横三本線)をつけトップバーにつけ、別途ハンバーガーメニューを作成する -->
       <!-- ヘッダータグのクラスなど付与して良い -->
+      <div class="flex justify-between">
+        <div class="logo">
+          <a href="#"><img src="http://via.placeholder.com/50" /></a>
+        </div>
+        <div class="header-right">
+          <a href="aboutus" class="aboutus">About Us</a>
+          <a href="qualifications">Qualifications</a>
+          <a href="howtojoin">How to Jon</a>
+          <a href="contact">Contact</a>
+        </div>
+      </div>
     </header>
     <section id="hero">
       <!-- ここにhero画像、文字を入れる -->
@@ -26,6 +37,18 @@
     </section>
     <section id="qualifications">
       <!-- ここにh1の見出し、本文、下部仕切り線を入れる -->
+      <div class="container mx-auto px-4">
+        <h1 class="font-sans text-center text-[35px] font-bold">
+          Qualifications
+        </h1>
+        <a class="font-sans text-[20px]">You need to:</a>
+        <ul class="list-inside">
+          <li class="font-sans text-[20px]">
+            Live in Bay Area (because we are planing on in-person short-term
+            development events.)
+          </li>
+        </ul>
+      </div>
     </section>
     <section id="how">
       <!-- ここにh1の見出し、本文、discordアイコン、下部仕切り線を入れる -->
@@ -37,7 +60,13 @@
       <!-- ここにロゴ、Facebook, Twitter, GitHubアイコンを入れる -->
       <!-- コピーライトの文字を入れる -->
       <!-- フッタータグのクラスなど付与して良い -->
-      <h1>Hello world</h1>
+      <div class="flex items-center justify-center bg-blue-300">
+        <img class="h-12" src="images/logo_transparent.png" alt="" />
+
+        <!-- <div class="m-auto">
+        </div> -->
+        <p>Copyright © Bay Area Hackers</p>
+      </div>
     </footer>
   </body>
 </html>
