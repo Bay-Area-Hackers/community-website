@@ -10,6 +10,16 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script> // Han Sans JP font
+      (function(d) {
+        var config = {
+          kitId: 'bry1yys',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
     <title>Bay Area Hackers</title>
   </head>
   <body>
@@ -37,24 +47,73 @@
     </section>
     <section id="qualifications">
       <!-- ここにh1の見出し、本文、下部仕切り線を入れる -->
-      <div class="container mx-auto px-4">
-        <h1 class="font-sans text-center text-[35px] font-bold">
+      <div class="body-container">
+        <h1 class="body-heading">
           Qualifications
         </h1>
-        <a class="font-sans text-[20px]">You need to:</a>
-        <ul class="list-inside">
-          <li class="font-sans text-[20px]">
-            Live in Bay Area (because we are planing on in-person short-term
-            development events.)
-          </li>
-        </ul>
+        <div class="text-container">
+          <a class="body-text">You need to:</a>
+          <ul class="list-outside list-disc px-10">
+            <li class="body-text">
+              Live in Bay Area (because we are planing on in-person short-term
+              development events.)
+            </li>
+            <li class="body-text">
+              Have programming experience in at least one language: C, C++, C#, 
+              Java, JavaScript, TypeScript, Swift, Kotlin, Dart, Scala, Rust, Ruby, 
+              Go and/or Python
+            </li>
+            <li class="body-text">
+              Have the motivation to learn CS
+            </li>
+            <li class="body-text">
+              Show respect to other members with various languages/programming levels 
+              and diverse background
+            </li>
+          </ul>
+        </div>
       </div>
+      <div class="line"></div>
     </section>
     <section id="how">
       <!-- ここにh1の見出し、本文、discordアイコン、下部仕切り線を入れる -->
+      <div class="body-container">
+        <h1 class="body-heading">
+          How to Join
+        </h1>
+        <div class="text-container">
+          <a class="body-text">
+            Join the Discord server through the following link. Read 
+            "about-this-server" channel and introduce yourself in "introduce-yourself" 
+            channel.
+          </a>
+        </div>
+        <div class="icon-container">
+          <a class="btn" target="_blank" href="https://discord.gg/Gmk6uHj8">
+            <img class="h-12" src="images/discord.png">
+          </a>
+        </div>
+      </div>
+      <div class="line"></div>
     </section>
     <section id="contact">
       <!-- ここにh1の見出し、本文、twitterアイコンを入れる -->
+      <div class="body-container">
+        <h1 class="body-heading">
+          Contact
+        </h1>
+        <div class="text-container">
+          <a class="body-text">
+            If you have any questions, click the following Twitter link and send a direct message 
+            to our account.
+          </a>
+        </div>
+        <div class="icon-container">
+          <a class="btn" target="_blank" href="https://discord.gg/Gmk6uHj8">
+            <img class="h-12" src="images/twitter.png">
+          </a>
+        </div>
+      </div>
     </section>
     <footer>
       <!-- ここにロゴ、Facebook, Twitter, GitHubアイコンを入れる -->
