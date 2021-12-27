@@ -9,7 +9,23 @@
 /* Mie ↓↓*/
 
 .header {
-  background-color: coral;
+  background-color: white;
+}
+.logo{
+  height: 100px;
+}
+.temp-content{
+  height: 5000px;
+}
+
+.navbar-item{
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* Montserrat Regular  */
+  font-family: 'Montserrat';
+  font-size: 20px;
 }
 
 /* Mie ↑↑*/
