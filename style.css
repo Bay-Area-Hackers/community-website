@@ -1,1 +1,7 @@
 /* 基本的にtailwindcssで作業する */
+
+.font-context {
+  font-family: source-han-sans-japanese, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
