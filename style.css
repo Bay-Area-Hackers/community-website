@@ -8,6 +8,170 @@
 
 /* Kuroshima ↓↓*/
 
+/* Smartphones */
+div.body-container {
+  margin: auto;
+  width: 80%;
+  padding: 15px 0;
+}
+
+div.line {
+  height: 1px;
+  width: 85%;
+  margin: auto;
+  background: rgb(156 163 175);
+}
+
+div.text-container {
+  border-width: 15px 0 0 0;
+  border-color: white;
+}
+
+div.icon-container {
+  border-width: 15px 0;
+  border-color: white;
+}
+
+.body-heading {
+  font-family: source-han-sans-japanese, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  font-size: 21px;
+  color: rgb(64,64,64);
+  margin: 15px 0;
+}
+
+.body-text {
+  font-family: source-han-sans-japanese, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(75 85 99);
+  line-height: 1.7;
+  margin: 10px 0;
+}
+
+.btn {
+  display:block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+/* Tablet */
+@media (min-width: 640px) {
+  
+  div.body-container {
+    margin: auto;
+    width: 80%;
+    padding: 20px 0;
+  }
+  
+  div.line {
+    height: 1px;
+    width: 88%;
+    margin: auto;
+    background: rgb(156 163 175);
+  }
+  
+  div.text-container {
+    border-width: 15px 0 30px 0;
+    border-color: white;
+  }
+  
+  div.icon-container {
+    border-width: 0 0 30px 0;
+    border-color: white;
+  }
+  
+  .body-heading {
+    font-family: source-han-sans-japanese, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    font-size: 21px;
+    color: rgb(64,64,64);
+    margin: 30px 0;
+  }
+  
+  .body-text {
+    font-family: source-han-sans-japanese, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(75 85 99);
+    line-height: 1.7;
+    margin: 10px 0;
+  }
+  
+  .btn {
+    display:block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+  div.body-container {
+    margin: auto;
+    width: 797px;
+    padding: 30px 0 50px 0;
+  }
+
+  div.line {
+    height: 1px;
+    width: 883px;
+    margin: auto;
+    background: rgb(156 163 175);
+  }
+
+  div.text-container {
+    border-width: 25px 40px; 
+    border-color: white;
+  }
+
+  div.icon-container {
+    border-width: 25px 0 40px 0;
+    border-color: white;
+  }
+
+  .body-heading {
+    font-family: source-han-sans-japanese, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(64,64,64);
+    margin: 30px 0;
+  }
+
+  .body-text {
+    font-family: source-han-sans-japanese, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(75 85 99);
+    line-height: 1.8;
+    margin: 15px 0;
+  }
+
+  .btn {
+    display:block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+}
+
 /* Kuroshima ↑↑*/
 
 /* Mie ↓↓*/
