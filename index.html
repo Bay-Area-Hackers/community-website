@@ -9,9 +9,18 @@
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Bay Area Hackers</title>
   </head>
+  <style>
+    hero {
+      font-family: 'Amatic SC';
+    }
+  </style>
   <body>
     <header>
       <!-- ここにロゴ、メニューの名前を入れる -->
@@ -19,7 +28,14 @@
       <!-- ヘッダータグのクラスなど付与して良い -->
     </header>
     <section id="hero">
-      <!-- ここにhero画像、文字を入れる -->
+      <hero>
+        <div
+          class="h-60 text-4xl sm:h-80 sm:text-6xl md:h-96 lg:h-screen lg:text-7xl w-screen bg-cover bg-no-repeat bg-center font-bold text-white flex justify-center items-center"
+          style="background-image: url('images/sf.jpg')"
+        >
+          BAY AREA HACKERS
+        </div>
+      </hero>
     </section>
     <section id="about">
       <!-- ここにh1の見出し、画像、本文、下部仕切り線を入れる -->
