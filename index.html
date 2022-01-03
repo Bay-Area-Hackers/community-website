@@ -14,15 +14,37 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script> // Han Sans JP font
-      (function(d) {
+    <script>
+      // Han Sans JP font
+      ;(function (d) {
         var config = {
-          kitId: 'bry1yys',
-          scriptTimeout: 3000,
-          async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-      })(document);
+            kitId: 'bry1yys',
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, '') + ' wf-inactive'
+          }, config.scriptTimeout),
+          tk = d.createElement('script'),
+          f = false,
+          s = d.getElementsByTagName('script')[0],
+          a
+        h.className += ' wf-loading'
+        tk.src = 'https://use.typekit.net/' + config.kitId + '.js'
+        tk.async = true
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState
+          if (f || (a && a != 'complete' && a != 'loaded')) return
+          f = true
+          clearTimeout(t)
+          try {
+            Typekit.load(config)
+          } catch (e) {}
+        }
+        s.parentNode.insertBefore(tk, s)
+      })(document)
     </script>
     <title>Bay Area Hackers</title>
   </head>
@@ -58,15 +80,36 @@
         </div>
       </hero>
     </section>
+
     <section id="about">
       <!-- ここにh1の見出し、画像、本文、下部仕切り線を入れる -->
+      <div class="body-container">
+        <h1 class="body-heading">About Us</h1>
+        <img src="images/pair-programming.jpg" class="mx-auto mb-10" />
+        <div class="text-container">
+          <a class="body-text"
+            >Are you looking for friends and opportunities to do team
+            development? Bay Area Hackers is the community where you can
+            experience team development with motivated members. We also help you
+            to:</a
+          >
+          <ul class="list-outside list-disc pl-7 lg:px-10">
+            <li class="body-text">Experience team development</li>
+            <li class="body-text">
+              Connect with those living in Bay Area who are interested in CS
+            </li>
+            <li class="body-text">Prepare for coding interviews</li>
+            <li class="body-text">Help you study CS with motivated members</li>
+            <li class="body-text">Share helpful information about CS</li>
+          </ul>
+        </div>
+      </div>
+      <div class="line"></div>
     </section>
     <section id="qualifications">
       <!-- ここにh1の見出し、本文、下部仕切り線を入れる -->
       <div class="body-container">
-        <h1 class="body-heading">
-          Qualifications
-        </h1>
+        <h1 class="body-heading">Qualifications</h1>
         <div class="text-container">
           <a class="body-text">You need to:</a>
           <ul class="list-outside list-disc pl-7 lg:px-10">
@@ -75,16 +118,14 @@
               development events.)
             </li>
             <li class="body-text">
-              Have programming experience in at least one language: C, C++, C#, 
-              Java, JavaScript, TypeScript, Swift, Kotlin, Dart, Scala, Rust, Ruby, 
-              Go and/or Python
+              Have programming experience in at least one language: C, C++, C#,
+              Java, JavaScript, TypeScript, Swift, Kotlin, Dart, Scala, Rust,
+              Ruby, Go and/or Python
             </li>
+            <li class="body-text">Have the motivation to learn CS</li>
             <li class="body-text">
-              Have the motivation to learn CS
-            </li>
-            <li class="body-text">
-              Show respect to other members with various languages/programming levels 
-              and diverse background
+              Show respect to other members with various languages/programming
+              levels and diverse background
             </li>
           </ul>
         </div>
@@ -94,19 +135,17 @@
     <section id="how">
       <!-- ここにh1の見出し、本文、discordアイコン、下部仕切り線を入れる -->
       <div class="body-container">
-        <h1 class="body-heading">
-          How to Join
-        </h1>
+        <h1 class="body-heading">How to Join</h1>
         <div class="text-container px-2">
           <a class="body-text">
-            Join the Discord server through the following link. Read 
-            "about-this-server" channel and introduce yourself in "introduce-yourself" 
-            channel.
+            Join the Discord server through the following link. Read
+            "about-this-server" channel and introduce yourself in
+            "introduce-yourself" channel.
           </a>
         </div>
         <div class="icon-container">
           <a class="btn" target="_blank" href="https://discord.gg/Gmk6uHj8">
-            <img class="h-12" src="images/discord.png">
+            <img class="h-12" src="images/discord.png" />
           </a>
         </div>
       </div>
@@ -115,18 +154,20 @@
     <section id="contact">
       <!-- ここにh1の見出し、本文、twitterアイコンを入れる -->
       <div class="body-container">
-        <h1 class="body-heading">
-          Contact
-        </h1>
+        <h1 class="body-heading">Contact</h1>
         <div class="text-container px-2">
           <a class="body-text">
-            If you have any questions, click the following Twitter link and send a direct message 
-            to our account.
+            If you have any questions, click the following Twitter link and send
+            a direct message to our account.
           </a>
         </div>
         <div class="icon-container">
-          <a class="btn" target="_blank" href="https://twitter.com/_bayareahackers">
-            <img class="h-12" src="images/twitter.png">
+          <a
+            class="btn"
+            target="_blank"
+            href="https://twitter.com/_bayareahackers"
+          >
+            <img class="h-12" src="images/twitter.png" />
           </a>
         </div>
       </div>
