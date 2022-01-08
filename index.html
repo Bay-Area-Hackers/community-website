@@ -19,18 +19,64 @@
       <!-- タブレット、スマホではハンバーガーメニューアイコン(横三本線)をつけトップバーにつけ、別途ハンバーガーメニューを作成する -->
       <!-- ヘッダータグのクラスなど付与して良い -->
       <div class="flex justify-between">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
         <a href="#" class="logo flex px-14 py-4">
           <img class="object-cover relative" src="images/logo_transparent.png" />
         </a>
-        <div class="header-right flex pr-12">
-          <a href="index.html#about" class="navbar-item">About Us</a>
-          <a href="index.html#qualifications" class="navbar-item">Qualifications</a>
-          <a href="index.html#how" class="navbar-item">How to Join</a>
-          <a href="index.html#contact" class="navbar-item">Contact</a>
-        </div>
+        <div class="nav-menu">
+          <a href="index.html#about" class="navbar-item">
+            <div>About Us</div>
+            <div class="arrow">
+              <div class="arrow-top"></div>
+              <div class="arrow-bottom"></div>
+            </div>
+          </a>
+          <a href="index.html#qualifications" class="navbar-item">
+            <div>Qualifications</div>
+            <div class="arrow">
+              <div class="arrow-top"></div>
+              <div class="arrow-bottom"></div>
+            </div>
+          </a>
+          <a href="index.html#how" class="navbar-item">
+            <div>How to Join</div>
+            <div class="arrow">
+              <div class="arrow-top"></div>
+              <div class="arrow-bottom"></div>
+            </div>
+          </a>
+          <a href="index.html#contact" class="navbar-item">
+            <div>Contact</div>
+            <div class="arrow">
+              <div class="arrow-top"></div>
+              <div class="arrow-bottom"></div>
+            </div>
+          </a>
+        </ul>
       </div>
     </header>
-    
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+      const navItem = document.querySelectorAll(".navbar-item");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+          navMenu.classList.toggle("active");
+          navItem.forEach(element => {
+            element.classList.toggle("active");
+          });
+      }
+    </script>
+
+<!-- 
+    <div style="background-color: aquamarine; height: 5000px;"></div> -->
     <!-- <div class="temp-content bg-blue-300"></div> -->
     
     <section id="hero">
@@ -41,7 +87,7 @@
     </section>
     <section id="qualifications">
       <!-- ここにh1の見出し、本文、下部仕切り線を入れる -->
-      <div class="container mx-auto px-4">
+      <!-- <div class="container mx-auto px-4">
         <h1 class="font-sans text-center text-[35px] font-bold">
           Qualifications
         </h1>
@@ -52,7 +98,7 @@
             development events.)
           </li>
         </ul>
-      </div>
+      </div> -->
     </section>
     <section id="how">
       <!-- ここにh1の見出し、本文、discordアイコン、下部仕切り線を入れる -->
@@ -64,13 +110,7 @@
       <!-- ここにロゴ、Facebook, Twitter, GitHubアイコンを入れる -->
       <!-- コピーライトの文字を入れる -->
       <!-- フッタータグのクラスなど付与して良い -->
-      <div class="flex items-center justify-center bg-blue-300">
-        <img class="h-12" src="images/logo_transparent.png" alt="" />
 
-        <!-- <div class="m-auto">
-        </div> -->
-        <p>Copyright © Bay Area Hackers</p>
-      </div>
     </footer>
   </body>
 </html>
