@@ -1,0 +1,287 @@
+/* 基本的にtailwindcssで作業する */
+
+/* Sota ↓↓*/
+
+#footer {
+  background-color: #01a8d0;
+}
+
+/* Sota ↑↑*/
+
+/* Kuroshima ↓↓*/
+
+/* Smartphones */
+div.body-container {
+  margin: auto;
+  width: 80%;
+  padding: 15px 0;
+}
+
+div.line {
+  height: 1px;
+  width: 85%;
+  margin: auto;
+  background: rgb(156 163 175);
+}
+
+div.text-container {
+  border-width: 15px 0 0 0;
+  border-color: white;
+}
+
+div.icon-container {
+  border-width: 15px 0;
+  border-color: white;
+}
+
+.body-heading {
+  font-family: source-han-sans-japanese, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  font-size: 21px;
+  color: rgb(64, 64, 64);
+  margin: 15px 0;
+}
+
+.body-text {
+  font-family: source-han-sans-japanese, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(75 85 99);
+  line-height: 1.7;
+  margin: 10px 0;
+}
+
+.btn {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+/* Tablet */
+@media (min-width: 640px) {
+  div.body-container {
+    margin: auto;
+    width: 80%;
+    padding: 20px 0;
+  }
+
+  div.line {
+    height: 1px;
+    width: 88%;
+    margin: auto;
+    background: rgb(156 163 175);
+  }
+
+  div.text-container {
+    border-width: 15px 0 30px 0;
+    border-color: white;
+  }
+
+  div.icon-container {
+    border-width: 0 0 30px 0;
+    border-color: white;
+  }
+
+  .body-heading {
+    font-family: source-han-sans-japanese, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    font-size: 21px;
+    color: rgb(64, 64, 64);
+    margin: 30px 0;
+  }
+
+  .body-text {
+    font-family: source-han-sans-japanese, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(75 85 99);
+    line-height: 1.7;
+    margin: 10px 0;
+  }
+
+  .btn {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: auto;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  div.body-container {
+    margin: auto;
+    width: 797px;
+    padding: 30px 0 50px 0;
+  }
+
+  div.line {
+    height: 1px;
+    width: 883px;
+    margin: auto;
+    background: rgb(156 163 175);
+  }
+
+  div.text-container {
+    border-width: 25px 40px;
+    border-color: white;
+  }
+
+  div.icon-container {
+    border-width: 25px 0 40px 0;
+    border-color: white;
+  }
+
+  .body-heading {
+    font-family: source-han-sans-japanese, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(64, 64, 64);
+    margin: 30px 0;
+  }
+
+  .body-text {
+    font-family: source-han-sans-japanese, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(75 85 99);
+    line-height: 1.8;
+    margin: 15px 0;
+  }
+
+  .btn {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: auto;
+  }
+}
+
+/* Kuroshima ↑↑*/
+
+/* Mie ↓↓*/
+
+.header {
+  background-color: white;
+  position: relative;
+  display:flex;
+  justify-content: space-between;
+  height:100px;
+}
+.hamburger{
+  position: absolute;
+  margin-left: 30px;
+  top: 33%;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  border-radius: 2px;
+  margin: 5px auto;
+  background-color: #000000;
+}
+
+a.logo{
+  margin:auto;
+}
+
+.header-img{
+  height: 60px;
+}
+
+
+.nav-menu{
+  display: none;
+}
+.nav-menu.active {
+  display: flex;
+  position: fixed;
+  top: 100px;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  border-top: 1px solid rgb(34, 34, 34);
+}
+
+.navbar-item.active {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(34, 34, 34);
+  height: 70px;
+  align-items: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.arrow {
+  right:0;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+  margin-right: 5px;
+  -webkit-transform: rotate(-45deg);
+}
+
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+  .arrow{
+    display: none;
+  }
+  .nav-menu {
+    display:flex;
+    margin-right: 20px;
+  }
+  .header {
+    background-color: white;
+  }
+  a.logo{
+    display: flex;
+    padding: 1rem 3.5rem 1rem 3.5rem;
+    height: 100px;    
+    margin: 0;
+  }
+  .temp-content{
+    height: 5000px;
+  }
+
+  .navbar-item{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* Montserrat Regular  */
+    font-family: 'Montserrat';
+    font-size: 20px;
+  }
+}
+
+/* :target {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
+} */
+
+/* Mie ↑↑*/
+
+/* Yuki ↓↓*/
+
+/* Yuki ↑↑*/
