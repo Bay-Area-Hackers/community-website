@@ -177,6 +177,9 @@ div.icon-container {
 .header {
   background-color: white;
   position: relative;
+  display:flex;
+  justify-content: space-between;
+  height:100px;
 }
 .hamburger{
   position: absolute;
@@ -194,12 +197,13 @@ div.icon-container {
 }
 
 a.logo{
-  display: flex;
-  padding: 1rem 3.5rem 1rem 3.5rem;
-  height: 100px;
-  margin-left: auto;
-  margin-right: auto;
+  margin:auto;
 }
+
+.header-img{
+  height: 60px;
+}
+
 
 .nav-menu{
   display: none;
@@ -252,7 +256,7 @@ a.logo{
     display: flex;
     padding: 1rem 3.5rem 1rem 3.5rem;
     height: 100px;    
-    margin-left: 0;
+    margin: 0;
   }
   .temp-content{
     height: 5000px;
